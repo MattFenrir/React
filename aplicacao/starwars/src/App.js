@@ -9,6 +9,9 @@ import Footer from './template/footer/Footer';
 import Home from './pages/home/Home';
 import People from './pages/people/People';
 import Person from './pages/person/Person';
+import Planets from './pages/planets/Planets';
+import Planet from './pages/planet/Planet';
+import Starships from './pages/starships/Starships';
 
 function App() {
   return (
@@ -16,8 +19,11 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/person/:number' element={<Person />} />
         <Route path='/people' element={<People />} />
+        <Route path='/starships' element={<Starships />} />
+        <Route path='/planets' element={<Planets />} />
+        <Route path='/person/:number' element={<Person />} />
+        <Route path='/planet/:number' element={<Planet />} />
       </Routes>
       <Footer />
     </BrowserRouter>
